@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "properties": {
+    "globalExtent": true,
+    "identifier": "massgis-1990s-orthos",
+    "fallbackSubtitle": "Aerial Imagery",
+    "year": 1995,
+    "bibliographicEntry": "Aerial imagery of Massachusetts from the 1990s, provided by [MassGIS](https://www.mass.gov/info-details/massgis-data-1990s-aerial-imagery)",
+    "source": {
+      "type": "xyz",
+      "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/BW_Orthos_Tile_Package/MapServer/tile/{z}/{y}/{x}"
+    }
+  },
+  "geometry": null
+}

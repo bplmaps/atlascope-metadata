@@ -1,0 +1,54 @@
+{
+  "type": "Feature",
+  "properties": {
+    "identifier": "ark:/76611/amhf8w1to",
+    "publisherShort": "Everts and Richards",
+    "year": "1895",
+    "bibliographicEntry": "_New topographical atlas of surveys Bristol County, Massachusetts_ (Everts and Richards, 1895)",
+    "source": {
+      "type": "tilejson",
+      "url": "https://s3.us-east-2.wasabisys.com/urbanatlases/amhf8w1to/tileset.json"
+    },
+    "catalogPermalink": "https://collections.leventhalmap.org/search/commonwealth:vx024543h",
+    "heldBy": [
+      "State Library of Massachusetts"
+    ],
+    "sponsors": [
+      {
+        "name": "Town of Freetown",
+        "url": "https://www.freetownma.gov/"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-71.0908, 41.8161],
+        [-71.1135, 41.7779],
+        [-71.1153, 41.7716],
+        [-71.1136, 41.7649],
+        [-71.0149, 41.7462],
+        [-71.0112, 41.7237],
+        [-71.0154, 41.7239],
+        [-71.0133, 41.7149],
+        [-71.0095, 41.7121],
+        [-70.9703, 41.7318],
+        [-70.9653, 41.7312],
+        [-70.9606, 41.7364],
+        [-70.9229, 41.7531],
+        [-70.9257, 41.759],
+        [-70.9092, 41.7661],
+        [-70.9067, 41.7668],
+        [-70.9116, 41.7697],
+        [-70.9258, 41.7903],
+        [-71.0245, 41.779],
+        [-71.0141, 41.7993],
+        [-71.0368, 41.8161],
+        [-71.0754, 41.8166],
+        [-71.0832, 41.8174],
+        [-71.0908, 41.8161]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "properties": {
+    "globalExtent": true,
+    "identifier": "massgis-2015-orthos",
+    "fallbackSubtitle": "Aerial Imagery",
+    "year": 2015,
+    "bibliographicEntry": "Aerial imagery of Massachusetts from 2015, provided by [MassGIS](https://www.mass.gov/info-details/massgis-data-2015-satellite-imagery-index)",
+    "source": {
+      "type": "xyz",
+      "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/imagery2015/MapServer/tile/{z}/{y}/{x}"
+    }
+  },
+  "geometry": null
+}

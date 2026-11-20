@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "atlas-layer.schema.json",
+  "title": "Atlascope atlas layer",
+  "description": "One historic atlas volume, stored as a single GeoJSON Feature in <instance>/atlas-layers/. Its geometry is the volume's footprint.",
+  "type": "object",
+  "required": ["type", "geometry", "properties"],
+  "properties": {
+    "type": { "const": "Feature" },
+    "geometry": { "$ref": "defs.schema.json#/$defs/footprint" },
+    "properties": {
+      "type": "object",
+      "required": [
+        "identifier",
+        "year",
+        "publisherShort",
+        "bibliographicEntry",
+        "source",
+        "catalogPermalink",
+        "heldBy"
+      ],
+      "properties": {
+        "identifier": { "$ref": "defs.schema.json#/$defs/identifier" },
+        "year": { "$ref": "defs.schema.json#/$defs/year" },
+        "publisherShort": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short publisher name shown as the layer subtitle."
+        },
+        "fallbackSubtitle": { "$ref": "defs.schema.json#/$defs/fallbackSubtitle" },
+        "bibliographicEntry": { "$ref": "defs.schema.json#/$defs/bibliographicEntry" },
+        "source": { "$ref": "defs.schema.json#/$defs/source" },
+        "catalogPermalink": {
+          "type": "string",
+          "format": "uri",
+          "description": "Link to the holding institution's catalog record."
+        },
+        "heldBy": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Names of institutions holding the physical volume. Free text."
+        },
+        "sponsors": {
+          "type": "array",
+          "items": { "$ref": "defs.schema.json#/$defs/sponsor" },
+          "description": "Organizations credited with funding the digitization. Free text names."
+        },
+        "plateGeometryFile": {
+          "type": "string",
+          "format": "uri",
+          "description": "Optional, future: URL of a GeoJSON of the individual plate polygons that compose the volume."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

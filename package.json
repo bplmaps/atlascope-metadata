@@ -1,0 +1,16 @@
+{
+  "name": "atlascope-metadata",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node utils/build.mjs",
+    "publish-instance": "node utils/publish.mjs"
+  },
+  "dependencies": {
+    "mapshaper": "0.8.6",
+    "yaml": "2.9.1"
+  }
+}

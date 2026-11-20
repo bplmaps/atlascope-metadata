@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=schemas/manifest.schema.json
+instances:
+  - id: boston
+    name: Boston
+    directory: boston
+    deployUrl: https://atlascope.org
+    targets:
+      endpoint: https://s3.us-east-2.wasabisys.com
+      region: us-east-2
+      bucket: urbanatlases
+      volumeExtentsGeojson: extents/boston-volume-extents.geojson
+      volumeExtentsTopojson: extents/boston-volume-extents.topojson
+      footprintsDissolved: extents/extents-dissolved.geojson
+      coverageList: extents/coverage-list.json
+  - id: portland
+    name: Portland
+    directory: portland
+    deployUrl: https://portland.atlascope.org
+    targets:
+      endpoint: null
+      region: null
+      bucket: null
+      volumeExtentsGeojson: null
+      volumeExtentsTopojson: null
+      footprintsDissolved: null
+      coverageList: null

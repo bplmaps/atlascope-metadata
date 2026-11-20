@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "properties": {
+    "identifier": "ark:/76611/al88rqaxb",
+    "publisherShort": "Bromley",
+    "year": "1891",
+    "bibliographicEntry": "_Atlas of the City of Boston, South Boston, Mass_, Vol. 8 (G.W. Bromley & Co.)",
+    "source": {
+      "type": "tilejson",
+      "url": "https://s3.us-east-2.wasabisys.com/urbanatlases/al88rqaxb/tileset.json"
+    },
+    "catalogPermalink": "https://collections.leventhalmap.org/search/commonwealth:tt44pv711",
+    "heldBy": [
+      "Leventhal Map & Education Center at the Boston Public Library"
+    ],
+    "sponsors": []
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-71.0594, 42.3378],
+        [-71.0642, 42.3311],
+        [-71.064, 42.3305],
+        [-71.0616, 42.3295],
+        [-71.0626, 42.3275],
+        [-71.0627, 42.3263],
+        [-71.0621, 42.3257],
+        [-71.0529, 42.3228],
+        [-71.0527, 42.3217],
+        [-71.0516, 42.3213],
+        [-71.0383, 42.3248],
+        [-71.0363, 42.3266],
+        [-71.0359, 42.3278],
+        [-71.0335, 42.3273],
+        [-71.0263, 42.3289],
+        [-71.0248, 42.3303],
+        [-71.0241, 42.332],
+        [-71.0243, 42.3406],
+        [-71.0251, 42.3422],
+        [-71.0402, 42.3429],
+        [-71.0337, 42.3515],
+        [-71.0337, 42.3522],
+        [-71.0465, 42.3575],
+        [-71.0491, 42.3551],
+        [-71.0553, 42.3469],
+        [-71.0568, 42.3473],
+        [-71.0576, 42.3462],
+        [-71.0595, 42.346],
+        [-71.0606, 42.3452],
+        [-71.0613, 42.3421],
+        [-71.0612, 42.3382],
+        [-71.0608, 42.3378],
+        [-71.0594, 42.3378]
+      ]
+    ]
+  }
+}

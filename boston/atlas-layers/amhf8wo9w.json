@@ -1,0 +1,59 @@
+{
+  "type": "Feature",
+  "properties": {
+    "identifier": "ark:/76611/amhf8wo9w",
+    "publisherShort": "Beers",
+    "year": "1871",
+    "bibliographicEntry": "_Atlas of Bristol Co., Massachusetts : from actual surveys_ (Beers, F.W., 1871)",
+    "source": {
+      "type": "tilejson",
+      "url": "https://s3.us-east-2.wasabisys.com/urbanatlases/amhf8wo9w/tileset.json"
+    },
+    "catalogPermalink": "https://collections.leventhalmap.org/search/commonwealth:9306wn39z",
+    "heldBy": [
+      "Leventhal Map & Education Center at the Boston Public Library"
+    ],
+    "sponsors": [
+      {
+        "name": "Town of Freetown",
+        "url": "https://www.freetownma.gov/"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-70.9221, 41.7919],
+        [-71.0253, 41.7793],
+        [-71.0152, 41.7965],
+        [-71.0147, 41.8068],
+        [-71.0235, 41.8066],
+        [-71.0362, 41.8168],
+        [-71.0429, 41.8186],
+        [-71.0767, 41.82],
+        [-71.1021, 41.8183],
+        [-71.1195, 41.766],
+        [-71.1102, 41.762],
+        [-71.0136, 41.7441],
+        [-71.0122, 41.725],
+        [-71.0192, 41.7243],
+        [-71.0197, 41.7229],
+        [-71.0148, 41.7231],
+        [-71.0142, 41.7213],
+        [-71.0162, 41.7208],
+        [-71.0166, 41.7198],
+        [-71.0142, 41.7194],
+        [-71.0149, 41.7173],
+        [-71.0135, 41.715],
+        [-71.0161, 41.7149],
+        [-71.0165, 41.7134],
+        [-71.013, 41.7086],
+        [-70.9673, 41.7243],
+        [-70.944, 41.7393],
+        [-70.9059, 41.7615],
+        [-70.9221, 41.7919]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "manifest.schema.json",
+  "title": "Atlascope instance manifest",
+  "description": "manifest.yaml: every Atlascope instance whose metadata lives in this repository.",
+  "type": "object",
+  "required": ["instances"],
+  "properties": {
+    "instances": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/instance" },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "instance": {
+      "type": "object",
+      "required": ["id", "name", "directory", "deployUrl", "targets"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Short stable key for the instance."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable instance name."
+        },
+        "directory": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Top-level directory holding the instance's atlas-layers/, reference-layers/ and coverage-list.json."
+        },
+        "deployUrl": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Public URL of the deployed Atlascope instance; null until it is deployed."
+        },
+        "targets": { "$ref": "#/$defs/targets" }
+      },
+      "additionalProperties": false
+    },
+    "objectKey": {
+      "type": ["string", "null"],
+      "pattern": "^[^/].*[^/]$",
+      "description": "Object key within the bucket, without a leading slash; null when not configured."
+    },
+    "targets": {
+      "type": "object",
+      "description": "Where the publish pipeline writes the instance's production files. Leave values null until the instance is ready to publish; the pipeline refuses to run while a required value is null.",
+      "required": [
+        "endpoint",
+        "region",
+        "bucket",
+        "volumeExtentsGeojson",
+        "volumeExtentsTopojson",
+        "footprintsDissolved",
+        "coverageList"
+      ],
+      "properties": {
+        "endpoint": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "S3-compatible endpoint URL, e.g. https://s3.us-east-2.wasabisys.com."
+        },
+        "region": {
+          "type": ["string", "null"],
+          "description": "Region used to sign requests to the endpoint."
+        },
+        "bucket": {
+          "type": ["string", "null"],
+          "pattern": "^[a-z0-9.-]+$"
+        },
+        "volumeExtentsGeojson": {
+          "$ref": "#/$defs/objectKey",
+          "description": "Archival bundle of every layer at full precision."
+        },
+        "volumeExtentsTopojson": {
+          "$ref": "#/$defs/objectKey",
+          "description": "Optimized TopoJSON read by the app (instance.json volumeExtentsFile)."
+        },
+        "footprintsDissolved": {
+          "$ref": "#/$defs/objectKey",
+          "description": "Dissolved, simplified coverage polygon (instance.json footprintsDissolved)."
+        },
+        "coverageList": {
+          "$ref": "#/$defs/objectKey",
+          "description": "Splash-page place list (instance.json coverageDescriptiveList); null if the instance has none."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

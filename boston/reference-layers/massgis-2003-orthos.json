@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "properties": {
+    "globalExtent": true,
+    "identifier": "massgis-2003-orthos",
+    "fallbackSubtitle": "Aerial Imagery",
+    "year": 2003,
+    "bibliographicEntry": "Aerial imagery of Massachusetts from 2001-2003, provided by [MassGIS](https://www.mass.gov/info-details/massgis-data-2001-2003-aerial-imagery)",
+    "source": {
+      "type": "xyz",
+      "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/orthos_2001_tile_package/MapServer/tile/{z}/{y}/{x}"
+    }
+  },
+  "geometry": null
+}

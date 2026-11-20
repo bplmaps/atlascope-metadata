@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "properties": {
+    "globalExtent": true,
+    "identifier": "massgis-2009-orthos",
+    "fallbackSubtitle": "Aerial Imagery",
+    "year": 2009,
+    "bibliographicEntry": "Aerial imagery of Massachusetts from the 2008-2009, provided by [MassGIS](https://massgis.maps.arcgis.com/home/item.html?id=c436d2041a4743e3a7981e1fe3705fae)",
+    "source": {
+      "type": "xyz",
+      "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/coq0809_from_sids_package/MapServer/tile/{z}/{y}/{x}"
+    }
+  },
+  "geometry": null
+}

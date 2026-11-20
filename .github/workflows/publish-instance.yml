@@ -1,0 +1,32 @@
+name: Publish instance (reusable)
+on:
+  workflow_call:
+    inputs:
+      instance:
+        description: Instance id from manifest.yaml
+        required: true
+        type: string
+    secrets:
+      WASABI_ACCESS_KEY_ID:
+        required: true
+      WASABI_SECRET_KEY_ID:
+        required: true
+
+jobs:
+  publish:
+    name: Build and publish ${{ inputs.instance }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build production files
+        run: node utils/build.mjs "${{ inputs.instance }}"
+      - name: Upload to storage
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.WASABI_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.WASABI_SECRET_KEY_ID }}
+        run: node utils/publish.mjs "${{ inputs.instance }}"

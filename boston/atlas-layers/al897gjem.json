@@ -1,0 +1,51 @@
+{
+  "type": "Feature",
+  "properties": {
+    "identifier": "ark:/76611/al897gjem",
+    "publisherShort": "Bromley",
+    "year": "1888",
+    "bibliographicEntry": "_Atlas of the city of Boston : city proper, volume two_ (G.W. Bromley & Co., 1888)",
+    "source": {
+      "type": "tilejson",
+      "url": "https://s3.us-east-2.wasabisys.com/urbanatlases/al897gjem/tileset.json"
+    },
+    "catalogPermalink": "https://collections.leventhalmap.org/search/commonwealth:tt44pv754",
+    "heldBy": [
+      "Leventhal Map & Education Center at the Boston Public Library"
+    ],
+    "sponsors": []
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-71.0701, 42.3527],
+        [-71.0714, 42.3558],
+        [-71.0723, 42.3566],
+        [-71.0904, 42.3516],
+        [-71.0866, 42.3432],
+        [-71.0842, 42.3415],
+        [-71.0855, 42.3402],
+        [-71.0832, 42.3385],
+        [-71.0846, 42.3372],
+        [-71.0835, 42.3354],
+        [-71.0825, 42.3342],
+        [-71.0806, 42.3332],
+        [-71.0792, 42.3339],
+        [-71.0757, 42.3314],
+        [-71.0733, 42.3328],
+        [-71.0724, 42.3325],
+        [-71.0638, 42.3381],
+        [-71.0589, 42.3451],
+        [-71.0555, 42.3457],
+        [-71.0543, 42.3486],
+        [-71.056, 42.35],
+        [-71.0642, 42.3516],
+        [-71.0641, 42.3525],
+        [-71.0644, 42.3529],
+        [-71.0677, 42.3532],
+        [-71.0701, 42.3527]
+      ]
+    ]
+  }
+}

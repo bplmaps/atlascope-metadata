@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reference-layer.schema.json",
+  "title": "Atlascope reference layer",
+  "description": "One modern reference basemap (aerial imagery, street map), stored as a single GeoJSON Feature in <instance>/reference-layers/. It has no footprint: geometry is null and globalExtent is true.",
+  "type": "object",
+  "required": ["type", "geometry", "properties"],
+  "properties": {
+    "type": { "const": "Feature" },
+    "geometry": { "type": "null" },
+    "properties": {
+      "type": "object",
+      "required": ["identifier", "year", "bibliographicEntry", "source", "globalExtent"],
+      "properties": {
+        "globalExtent": {
+          "const": true,
+          "description": "Tells the app the layer covers the whole map."
+        },
+        "identifier": { "$ref": "defs.schema.json#/$defs/identifier" },
+        "fallbackSubtitle": { "$ref": "defs.schema.json#/$defs/fallbackSubtitle" },
+        "year": { "$ref": "defs.schema.json#/$defs/year" },
+        "bibliographicEntry": { "$ref": "defs.schema.json#/$defs/bibliographicEntry" },
+        "source": { "$ref": "defs.schema.json#/$defs/source" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

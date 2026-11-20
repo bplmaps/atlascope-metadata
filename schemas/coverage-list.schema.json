@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "coverage-list.schema.json",
+  "title": "Atlascope coverage list",
+  "description": "Named places offered in the splash-page search combobox. Hand-maintained.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "center"],
+    "properties": {
+      "name": { "type": "string", "minLength": 1 },
+      "center": {
+        "type": "array",
+        "description": "[longitude, latitude] the map flies to when the place is chosen.",
+        "prefixItems": [
+          { "type": "number", "minimum": -180, "maximum": 180 },
+          { "type": "number", "minimum": -90, "maximum": 90 }
+        ],
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "neighborhood": {
+        "type": "boolean",
+        "description": "Place is a neighborhood within the instance's main city rather than a separate municipality."
+      },
+      "new": {
+        "type": "boolean",
+        "description": "Flag the place as newly added in the combobox. Always set by hand."
+      }
+    },
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,10 @@
+name: Publish Portland metadata
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-instance.yml
+    with:
+      instance: portland
+    secrets: inherit

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "volume-extents.schema.json",
+  "title": "Atlascope volume extents (production)",
+  "description": "Consolidated GeoJSON FeatureCollection built from an instance's atlas-layers/ and reference-layers/ files. Not edited by hand; the TopoJSON and dissolved-coverage files are derived from it. Identifiers must be unique across the collection (not enforceable in JSON Schema).",
+  "type": "object",
+  "required": ["type", "features"],
+  "properties": {
+    "type": { "const": "FeatureCollection" },
+    "name": { "type": "string" },
+    "features": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          { "$ref": "atlas-layer.schema.json" },
+          { "$ref": "reference-layer.schema.json" }
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}

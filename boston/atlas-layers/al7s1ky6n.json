@@ -1,0 +1,55 @@
+{
+  "type": "Feature",
+  "properties": {
+    "identifier": "ark:/76611/al7s1ky6n",
+    "publisherShort": "Hopkins",
+    "year": "1875",
+    "bibliographicEntry": "_Atlas of the County of Suffolk, Massachusetts_, vol. 6 (G.M. Hopkins & Co., 1875)",
+    "source": {
+      "type": "tilejson",
+      "url": "https://s3.us-east-2.wasabisys.com/urbanatlases/al7s1ky6n/tileset.json"
+    },
+    "catalogPermalink": "https://collections.leventhalmap.org/search/commonwealth:tt44pv37q",
+    "heldBy": [
+      "Leventhal Map & Education Center at the Boston Public Library"
+    ],
+    "sponsors": []
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-71.0725, 42.3859],
+        [-71.0704, 42.3894],
+        [-71.0653, 42.3951],
+        [-71.0655, 42.3956],
+        [-71.0706, 42.3982],
+        [-71.0767, 42.3918],
+        [-71.0775, 42.3903],
+        [-71.0777, 42.3877],
+        [-71.0784, 42.386],
+        [-71.0805, 42.3831],
+        [-71.0797, 42.3792],
+        [-71.0747, 42.374],
+        [-71.0739, 42.374],
+        [-71.0692, 42.3707],
+        [-71.0681, 42.3712],
+        [-71.063, 42.3664],
+        [-71.0594, 42.3681],
+        [-71.0587, 42.3693],
+        [-71.0556, 42.3708],
+        [-71.0546, 42.3704],
+        [-71.0503, 42.3724],
+        [-71.046, 42.3785],
+        [-71.0467, 42.3793],
+        [-71.0463, 42.3831],
+        [-71.0493, 42.3847],
+        [-71.0604, 42.3858],
+        [-71.0612, 42.3827],
+        [-71.0679, 42.3858],
+        [-71.0713, 42.3862],
+        [-71.0725, 42.3859]
+      ]
+    ]
+  }
+}
