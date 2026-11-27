@@ -7,10 +7,10 @@
     "bibliographicEntry": "_Richards Standard Atlas of the City of Portland, including the city of So. Portland, Maine ..._ (Springfield, MA: Richards Map Company, 1914)",
     "source": {
       "type": "tilejson",
-      "url": "https://s3.us-east-2.wasabisys.com/urbanatlases/al6pkxi27/tileset.json"
+      "url": "https://s3.us-east-2.wasabisys.com/oml-urbanatlases/al6pkxi27/tileset.json"
     },
     "catalogPermalink": "https://oshermaps.org/map/2982",
-    "plateGeometryFile": "https://s3.us-east-2.wasabisys.com/urbanatlases/al6pkxi27/plates.geojson",
+    "plateGeometryFile": "https://s3.us-east-2.wasabisys.com/oml-urbanatlases/al6pkxi27/plates.geojson",
     "heldBy": [
       "Osher Map Library"
     ]
