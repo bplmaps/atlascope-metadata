@@ -17,10 +17,10 @@ instances:
     directory: portland
     deployUrl: https://portland.atlascope.org
     targets:
-      endpoint: null
-      region: null
-      bucket: null
-      volumeExtentsGeojson: null
-      volumeExtentsTopojson: null
-      footprintsDissolved: null
-      coverageList: null
+      endpoint: https://s3.us-east-2.wasabisys.com
+      region: us-east-2
+      bucket: oml-urbanatlases
+      volumeExtentsGeojson: extents/portland-volume-extents.geojson
+      volumeExtentsTopojson: extents/portland-volume-extents.topojson
+      footprintsDissolved: extents/extents-dissolved.geojson
+      coverageList: extents/coverage-list.json
